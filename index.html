@@ -7,12 +7,20 @@
     <style>
         body {
             display: flex;
+			flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #ffd7f7;
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: Arial, sans-serif;
         }
+		
+		h1, img {
+            opacity: 0;
+            transform: scale(0.5);
+            animation: bloom 1.5s ease-out forwards;
+        }
+			
         h1 {
             font-size: 100px;
             opacity: 0;
@@ -20,6 +28,15 @@
             animation: bloom 1.5s ease-out forwards;
 			font-family: "Dancing Script", cursive;
         }
+		
+		  img {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            margin-top: 20px;
+            animation-delay: 0.5s;
+        }
+		
         @keyframes bloom {
             0% {
                 opacity: 0;
@@ -35,5 +52,6 @@
 </head>
 <body>
     <h1>Fuck no</h1>
+	 <img src="download (15).jpg" alt="download (15)">
 </body>
 </html>
